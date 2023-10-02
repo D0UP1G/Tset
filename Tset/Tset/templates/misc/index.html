@@ -1,0 +1,50 @@
+{% load static %}
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="{% static 'misc/main/style.css' %}" media="all">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Главная</title>
+	<link type="image/x-icon" href="{% static 'misc/main/icon.svg' %}">
+</head>
+<body bgcolor="#7f878a">
+	<div class="shapka">
+		<center>
+			<div class="main">
+				<div class="main-text">TestNation</div>
+				<img class="main-icon" src="icon.png">
+			</div>
+		</center>
+	</div>
+	<div>
+		<center class="text"><h1>Добро пожаловать</h1></center>
+
+		<div class="info-tabl">
+			<img src="{% static 'misc/main/icon.svg' %}">
+			<div class="info-tabl_text">
+				<div class="info-tabl_glav-text">Что такое TestNation?</div>
+				<div class="info-tabl_pod-text">TestNation - это интелектуальная карусель для любителей головоломок. Сайт позволяет развивать критическое мышление, логику, пространственное мышление, анализ и наблюдательность, решая карточки с заданиями.</div>
+			</div>
+		</div>
+
+		<div class="card-tabl">
+			<img src="card.png">
+			<div class="card-tabl_text">
+				<div class="card-tabl_glav-text">Карточки с заданиями</div>
+				<div class="card-tabl_pod-text">Карточки разные и с разными заданиями. Решая их вы получаете баллы, которые показывают ваш уровень интеллекта. Чем сложнее карточка, тем больше вы получите баллов.</div>
+				<a href="tests/"><div class="card-button">Перейти к тестам</div></a>
+			</div>
+		</div>
+
+		<div class="stat-tabl">
+			<img src="accaunt.png">
+			<div class="stat-tabl_text">
+				<div class="stat-tabl_glav-text">Статистика в профиле</div>
+				<div class="stat-tabl_pod-text">Соревнуйтесь с другими пользователями за баллы. Чем больше баллов, тем выше ваш рейтинг. За сложные задания вам дают больше баллов, чем за более лёгкие.</div>
+				<a href=""><div class="stat-button">Профиль</div></a>
+			</div>
+		</div>
+	</div>
+	<div class="pod-shapka"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tests page</title>
+    <link rel="stylesheet" href='{% static "TestsPage/style.css" %}'>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <img class="header__logo"src="" alt="Лого">
+                <div class="header__title">
+                    <a href="./../">TestNation</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="card">
+            <div class="container">
+                <div class="card__content">
+                    <div class="card__question">
+                        {{ Tests.Question }}
+                    </div>
+                    <form class="card__controls" method="POST">
+                        {% csrf_token %}
+                        <div class="card__controls__input">
+                            <input type="text" name="solve" placeholder="Введите ответ: ">
+                        </div>
+                        <div class="card__controls__submit">
+                            <input type="submit" value="Отправить">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+        </div>
+    </footer>
+    <!-- {{ Tests.Solve }} -->
+</body>
+</html>
