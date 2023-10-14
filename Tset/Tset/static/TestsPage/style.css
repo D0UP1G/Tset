@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;900&display=swap');
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+/* Base */
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1290px;
+}
+body{
+    background-color: #c1bbb3;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+/* Content */
+.header {
+    background-color: grey;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 1px 10px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.header__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 52px;
+}
+.header__logo{
+}
+.header__title {
+    color: #fff;
+    font-size: 26px;
+}
+.header__title a{
+    color: #fff;
+}
+.main {
+    padding: 50px 0px;
+    display: grid;
+    gap: 20px;
+}
+.card {
+}
+.card__content {
+    padding: 30px;
+    min-height: 500px;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    box-shadow: 1px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 25px;
+    background-color: grey;
+
+}
+.card__question {
+    padding: 20px;
+    width: 650px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    
+    color: #f5c345;
+    background-color: rgb(104, 102, 102);
+    border-radius: 15px;
+    box-shadow: 5px 10px 7px 3px rgba(34, 60, 80, 0.2) inset;
+
+}
+.card__controls {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 650px;
+    /* height: 100px; */
+}
+.card__controls__input {    
+    padding: 10px 20px;
+    height: 100%;
+    
+    box-shadow: 4px 6px 0px 0px rgba(34, 60, 80, 0.2);
+    background: linear-gradient(72deg, rgba(246,180,2,1) 0%, rgba(255,201,66,1) 100%);
+    border-radius: 25px 0px 0px 25px;
+}
+.card__controls__input input{
+    padding: 5px 10px;
+    height: 100%;
+    background: linear-gradient(72deg, rgba(204,149,2,1) 0%, rgba(223,177,62,1) 100%);
+    border-radius: 25px 0px 0px 25px;
+}
+.card__controls__input input{
+    color: #fff;
+}
+.card__controls__input input::placeholder{
+    font-weight: 500;
+    color: gold;
+}
+.card__controls__submit, .card__controls__submit input {
+    
+    height: 49px;
+    background-color: #fff;
+    color: gold;
+    font-weight: 700;
+}
+.card__controls__submit{
+    padding: 0px 25px;
+
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 4px 6px 0px 0px rgba(34, 60, 80, 0.2);
+}
+.footer {
+}
